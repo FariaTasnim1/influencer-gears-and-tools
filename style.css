@@ -1,0 +1,236 @@
+body{
+    background-color: rgb(175, 200, 243);
+}
+.heading{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 200px;
+}
+.uni{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+}
+.para-1{
+    font-size: 20px;
+}
+.half-width{
+    width: 50%;
+    margin-left: 30px;
+}
+.half-width img{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text-position{
+       position: relative;
+       left: 120px;
+       top: 80px;
+       
+}
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(rgb(219, 36, 103), rgb(219, 35, 72));
+    margin-right: 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+
+}
+.pics{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 1110px;
+    position: relative;
+    left: 250px;
+    top: 20px;
+    
+}
+    
+.align{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.influencer{
+    position: relative;
+    top: 40px;
+}
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 250px;
+    position: relative;
+}
+nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    padding: 10px 5px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+nav p{
+   position: relative;
+   left: 50px;
+   font-size: 20px;
+}
+#sec-head{
+    text-align: center;
+}
+.product{
+    width: 300px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 30px grey;
+    background-color: cornsilk;
+}
+.uni-2{
+    font-family: 'Poppins', sans-serif;  
+}
+.fa-star.filled{
+    color: yellow;
+}
+.fa-star-half-alt.empty{
+    color: yellow;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 50px;
+    margin: 80px 200px;
+   
+}
+.product:hover{
+    transform: scale(1.15);
+    
+}
+.more{
+    position: relative;
+    left: 70%;
+}
+.style-2{
+    position: relative;
+    top: -10px;
+}
+footer{
+    background-color: purple;
+    width: 100%;
+    height: 300px;
+}
+.footer{
+    position: relative;
+    top: 150px;
+    left: 45%;
+}
+.foot-head{
+    color: blanchedalmond;
+}
+.foot-b1{
+    position: relative;
+    left: -60px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.footicon{
+    position: relative;
+    left: 30px;
+}
+@media only screen and (max-width:688px) {
+    .heading{
+        flex-direction: column-reverse;
+        
+    }
+    .uni{
+        width: 680px;
+      position: relative;
+      left: -80px;
+    }
+    .align{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        
+    }
+    nav div ul{
+        margin-top: 20px;
+        position: relative;
+        left: -30px;
+    }
+    .pics{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       width: 680px;
+        position: relative;
+        left: 10px;
+        top: 20px;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+footer{
+    width: 688px;
+}
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .heading{
+        flex-direction: column-reverse;
+        align-items: center;
+        width:700px
+        
+    }
+    .uni{
+        width: 700px;
+        position: relative;
+        left: -30px;
+      
+    }
+    .align{
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        position: relative;
+        top: 60px;
+        left: 100px;
+        
+    }
+    nav div ul{
+        margin-top: 20px;
+        position: relative;
+        left: -140px;
+    }
+    .pics{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       width: 700px;
+        position: relative;
+        left: 200px;
+        top: 20px;
+}
+#sec-head{
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 100px;
+
+}
+.product{
+    margin: 0px 20px;
+}
+footer{
+  width: 750px;
+}
+}
